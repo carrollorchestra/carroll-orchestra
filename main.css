@@ -1,0 +1,139 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+img {
+  filter: grayscale(100%);
+}
+h2 {
+  font-size: 30px;
+  color: #009a4d;
+  text-transform: uppercase;
+
+}
+.top-nav {
+  padding: 2vh;
+  height: 4vh;
+  background-color: black;
+  width: 100%;
+}
+                                  .top-nav a {
+                                    color: #cccccc;
+                                    transition: .5s;
+                                  }
+                                  .top-nav a:hover {
+                                    color: white;
+                                  }
+.title {
+  font-size: 3vw;
+  width: 100%;
+  text-align: center;
+}
+
+.what {
+  width: 80%;
+  margin-left: 10%;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+                              .what-inner {
+                                display: inline-block;
+                                width: 40%;
+                                padding: 5%;
+                              }
+                              .nursing-solo {
+                                width: 150%;
+                                margin-left: -5vw;
+                              }
+                              .nursing-solo-container {
+                                width: 40%;
+                                overflow: hidden;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin: 5vh 0 5vh 0;
+                              }
+
+.performance {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  margin-top: 5vh;
+  padding-bottom: 5vh;
+  border-bottom: 1px solid #cccccc;
+}
+                            .performance ul {
+                              list-style-type: none;
+                              margin: 4vh;
+                              padding: 4vh;
+                              font-size: 30px;
+                            }
+                            .performance ul div {
+                              display: inline-block;
+                              cursor: pointer;
+                            }
+                            .time {
+                              width: 30%;
+                              text-align: left;
+
+                            }
+                            .name {
+                              width: 40%;
+                              text-align: center;
+                            }
+                            .location {
+                              width: 30%;
+                              text-align: right;
+                            }
+.members {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  padding-bottom: 5vh;
+  border-bottom: 1px solid #cccccc;
+}
+                            .one {
+                              width: 60vw;
+                            }
+                            .one-container {
+                              width: 40vw;
+                              overflow: hidden;
+                              display: inline-block;
+                            }
+.goal {
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 5vh;
+  border-bottom: 1px solid #cccccc;
+}
+                            .four {
+                              width: 80vw;
+                            }
+                            .four-container {
+                              width: 80vw;
+                              overflow: hidden;
+                            }
+
+.support {
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 5vh;
+  border-bottom: 1px solid #cccccc;
+}
+.contact {
+
+}
+.bottom-nav {
+  background-color: black;
+  color: white;
+  width: 80%;
+  padding-top: 5vh;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 5vh;
+}
