@@ -5,25 +5,33 @@
     Color Scheme
     black, white, #009a4d
   -->
-  <link rel="stylesheet" href = "main.css">
+  <link rel = "icon" href = "images/dragon-logo.jpg" type="image/gif">
+  <link rel="stylesheet" href = "CSS/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
+  <img src = "images/nursing.jpg" alt = "Nursing home performance photo" class = "nursing">
+  <img src = "images/three.jpg" alt = "Town Square Performance Photo" class = "three">
+  <img src = "images/two.jpg" alt = "Town Square Performance Photo" class = "two">
   <div class = "top-nav">
 
-    <a href = "">About</a>
-    <a href = "">Performances</a>
-    <a href = "">Goals</a>
-    <a href = "">Members</a>
-    <a href = "">Contact</a>
+    <a href = "about.html">About</a><!--
+    --><a href = "performances.html">Performances</a><!--
+    --><a href = "support.html">Support</a><!--
+    --><a href = "gallery.html">Gallery</a><!--
+    --><a href = "">Contact</a>
   </div>
   <div class = "title">
     <h1>CARROLL CHAMBER ORCHESTRA</h1>
+    <p>woodwind, string, brass and percussion ensembles with repertoire from classical, pop, film, and more</p>
   </div>
   <div class = "what">
     <div class = "what-inner">
-      <h2>What Do We Do?</h2>
-      <p>We provide performances for the community, both in public and in school.</p>
+      <h2>The ultimate goal</h2>
+      <p> of the Carroll Chamber Orchestra is to set up the framework for an
+      orchestra program at Southlake Carroll. In order to accomplish this, we need support
+      from parents, administrators, teachers, and students. Interested in establishing the Carroll ISD symphony orchestra?</p>
+      <a href = "">Learn how you can get involved</a>
     </div>
     <div class = "nursing-solo-container">
       <img class = "nursing-solo" src = "images/nursing-solo.jpg" alt = "Solo cello playing at a nursing home">
@@ -35,62 +43,120 @@
     <h2>Performance Times</h2>
     <ul>
       <li>
-        <a>
-          <div class = "time">04.06 4-6pm</div><!--
-       --><div class = "name">Senior Center</div><!--
-       --><div class = "location">1234 Road Avenue</div>
+        <a  onmouseover = "display('nursing')" onmouseout = "displayNone('nursing')">
+          <div style = "text-decoration: line-through;" class = "time">04.06 4-6pm</div><!--
+       --><div style = "text-decoration: line-through;" class = "name">Senior Center</div><!--
+       --><div style = "text-decoration: line-through;" class = "location">200 Keller Smithfield Rd S</div>
         </a>
       </li>
       <li>
-        <a>
-          <div class = "time">04.06 4-6pm</div><!--
+        <a onmouseover = "display('three')" onmouseout = "displayNone('three')">
+          <div class = "time">04.24 4-6pm</div><!--
        --><div class = "name">Art in the Square</div><!--
-       --><div class = "location">1234 Road Avenue</div>
+       --><div class = "location">1560 E Southlake Blvd</div>
         </a>
       </li>
-      <li>
-        <a>
-          <div class = "time">04.06 4-6pm</div><!--
-       --><div class = "name">Timeless Dance</div><!--
-       --><div class = "location">1234 Road Avenue</div>
-        </a>
-      </li>
+      
 
     </ul>
   </div>
+
+  <div class = "news">
+    <h2>News</h2>
+    <ol>
+      <li>
+        <h4>Carroll Chamber Institute is performing at Art in the Square</h4>
+        <p>Click here to see date, time, location, musical selections and more</p>
+      </li>
+      <li>
+        <h4>Carroll Senior High School Before-school Program Approved</h4>
+        <p>Find out when and where our musicians will be performing</p>
+      </li>
+      <li>
+        <h4>Successful Performance at Legacy at Bear Creek</h4>
+        <p>CCO soloists and small ensembles perform classical pieces for resident seniors</p>
+      </li>
+    </ol>
+
+  </div>
+
   <div class = "members">
     <h2>Members</h2>
-    <div class = "one-container">
-      <img class = "one" src = "images/one.jpg" alt = "Picture of our orchestra members">
+    <div class = "members-text">
+      &darr;&nbsp; click &nbsp;&darr;
     </div>
+    <div class = "one-container" onclick = "people()">
+      <img class = "a" src = "images/people/anthony.jpg" alt = "Picture of our orchestra members">
+      <img class = "b" src = "images/people/grace.jpg" alt = "Picture of our orchestra members">
+      <img class = "c" src = "images/people/red-head.jpg" alt = "Picture of our orchestra members">
+      <img class = "d" src = "images/people/allen.jpg" alt = "Picture of our orchestra members">
+      <img class = "e" src = "images/people/steven.jpg" alt = "Picture of our orchestra members">
+    </div>
+
   </div>
+
+
   <div class = "goal">
-    <h2>Our Ultimate Goal</h2>
-    <p>To eventually establish a full-scale school-sponsored orchestra, starting with after-school rehearsals.</p>
+    <h2>Who are we?</h2>
+    <p>The Carroll Chamber Orchestra, also known as CCO, is a student-run organization advocating for the
+      establishment of a Carroll ISD orchestra program. Our free public performances and other programs are
+      aimed at enriching the lives of Carroll ISD students and the local community with the value of music.
+</p>
 
     <div class = "four-container">
       <img class = "four" src = "images/four.jpg" alt = "Picture of our orchestra rehearsing">
     </div>
   </div>
+
+  <!--
   <div class = "support">
     <h2>Support Us</h2>
-    <h3>Donate</h3>
-    <h3>Join the Orchestra</h3>
-    <h3>Parent Stuff</h3>
-  </div>
-
-  <div class = "bottom-nav">
-    <div class = "contact">
-      <h2>Contact Us</h2>
-      <div class = "group-1">
-        carrollchamberinstitute@gmail.com
-      </div>
+    <div class = "donate">
+      <h3>Donate</h3>
+      <p>a little description of what has happened in this asdjflakds asdhiogasdlk lorem ispun dollar</p>
+      <br>
+      <a href = "">now &rsaquo;</a>
     </div>
-    Copyright @Bok Choy
+    <div class = "join">
+      <h3>Join the Orchestra</h3>
+      <p>we rehearse once every two weeks at 4:00 in the choir room</p>
+      <br>
+    </div>
+    <div class = "parent">
+      <h3>Parent Stuff</h3>
+      <p>a little description of what has happened in this asdjflakds asdhiogasdlk lorem ispun dollar</p>
+      <br>
+      <a href = "">now &rsaquo;</a>
+    </div>
+
+
+  </div>-->
+
+  <div class = "contact">
+    <h2>Contact Us</h2>
+    <!--<p>If you have any questions, comments or concerns regarding CCO, we can be reached through:</p>-->
+    <div class = "group-1">
+      Email: <a href="mailto:carrollchamberinstitute@email.com">carrollchamberinstitute@gmail.com</a>
+    </div><!--
+    --><div class = "group-2">
+      1501 W. Southlake Boulevard, Southlake, TX
+    </div><!--
+  --><div class = "group-3">
+      Instagram: carrollchamberorchestra
+    </div>
+  </div>
+  <div class = "bottom-nav">
+
+    Copyright @ 2019 Bok Choy
   </div>
 
   <script>
-
+    function display(nursing) {
+      document.querySelector('.' + nursing).style.display = "block";
+    }
+    function displayNone(nursing) {
+      document.querySelector('.' + nursing).style.display = "none";
+    }
     document.addEventListener("scroll", function() {
       var num = window.scrollY / 1400;
       if (num > 1) {
@@ -102,6 +168,26 @@
 
 
     });
+    document.addEventListener("mousemove", function(event) {
+      var y = event.clientY - 80;
+      var x = event.clientX - 80;
+      document.querySelector('.nursing').style.top = "" + y + "px";
+      document.querySelector('.nursing').style.left = "" + x + "px";
+      document.querySelector('.three').style.top = "" + y + "px";
+      document.querySelector('.three').style.left = "" + x + "px";
+      document.querySelector('.two').style.top = "" + y + "px";
+      document.querySelector('.two').style.left = "" + x + "px";
+    });
+
+    var num = 0;
+    function people() {
+      num += 45;
+      //document.querySelector('.one-container img').style.transform = "translateX(-" + num + "vw)";
+      if (num > 220) {
+        num = 0;
+      }
+      document.querySelector('.one-container img').style.marginLeft = "-" + num + "vw";
+    }
   </script>
 </body>
 </html>
