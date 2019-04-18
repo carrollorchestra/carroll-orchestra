@@ -23,26 +23,7 @@ h2 {
   z-index: -1;
   display: none;
 }
-.top-nav {
-  top: 0;
-  display: none;
-  z-index: 4;
-  position: fixed;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  background-color: black;
-  width: 100%;
-}
-                                  .top-nav a {
-                                    color: #cccccc;
-                                    transition: .5s;
-                                    width: 20%;
-                                    text-align: center;
-                                    display:inline-block;
-                                  }
-                                  .top-nav a:hover {
-                                    color: white;
-                                  }
+
 .title {
   font-size: 3vw;
   width: 100%;
@@ -287,13 +268,3 @@ h2 {
                                               width: 33%;
                                               text-align: right;
                                             }
-
-.bottom-nav {
-  background-color: black;
-  color: white;
-  width: 80%;
-  padding-top: 5vh;
-  padding-right: 10%;
-  padding-left: 10%;
-  padding-bottom: 5vh;
-}

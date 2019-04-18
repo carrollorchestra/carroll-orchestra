@@ -1,0 +1,40 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+.top-nav {
+  display: none;
+  top: 0;
+  z-index: 4;
+  position: fixed;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: black;
+  width: 100%;
+}
+                                  .top-nav a {
+                                    color: #cccccc;
+                                    width: 20%;
+                                    text-align: center;
+                                    display:inline-block;
+                                  }
+                                  .top-nav a:hover {
+                                    color: white;
+                                  }
+  a {
+    text-decoration: none;
+  }
+
+  .bottom-nav {
+    display: none;
+    background-color: black;
+    color: white;
+    width: 80%;
+    padding-top: 5vh;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5vh;
+  }
