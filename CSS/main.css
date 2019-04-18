@@ -17,6 +17,34 @@ h2 {
   text-transform: uppercase;
 
 }
+ol {
+  list-style: none;
+}
+li {
+  margin-bottom: 2vh;
+  list-style-type: none;
+}
+
+@media screen and (max-width:1080px) {
+  body {
+    text-align: center;
+  }
+  img {
+    width: 100vw;
+    display: none;
+  }
+  ol {
+    padding: 0;
+
+  }
+  .members {
+    display: none;
+  }
+  .three {
+    display: inline-block;
+  }
+}
+@media screen and (min-width:1080px) {
 .nursing, .three, .two {
   position: fixed;
   height: 40vh;
@@ -115,12 +143,7 @@ h2 {
   vertical-align: top;
 
 }
-                                    ol {
-                                      list-style: none;
-                                    }
-                                    li {
-                                      margin-bottom: 2vh;
-                                    }
+
                                     li h4 {
                                       margin: 0;
                                       text-decoration: underline;
@@ -268,3 +291,4 @@ h2 {
                                               width: 33%;
                                               text-align: right;
                                             }
+  }
