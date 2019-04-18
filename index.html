@@ -32,7 +32,7 @@
       <p> of the Carroll Chamber Orchestra is to set up the framework for an
       orchestra program at Southlake Carroll. In order to accomplish this, we need support
       from parents, administrators, teachers, and students. Interested in establishing the Carroll ISD symphony orchestra?</p>
-      <!--<a href = "">Learn how you can get involved</a>-->
+      <a  onclick = "smoothScroll(document.getElementById('scroll-target'))"><!--Learn how you can -->Get involved</a>
     </div>
     <div class = "nursing-solo-container">
       <img class = "nursing-solo" src = "images/nursing-solo.JPG" alt = "Solo cello playing at a nursing home">
@@ -133,7 +133,7 @@
 
   </div>-->
 
-  <div class = "contact">
+  <div class = "contact" id = "scroll-target">
     <h2>Contact Us</h2>
     <!--<p>If you have any questions, comments or concerns regarding CCO, we can be reached through:</p>-->
     <div class = "group-1">
@@ -190,5 +190,28 @@
       document.querySelector('.one-container img').style.marginLeft = "-" + num + "vw";
     }
   </script>
+  <script>
+    //autoscroll
+  	window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+      scroll = function(c, a, b, i) {
+          i++; if (i > 50) return;
+          c.scrollTop = a + (b - a) / 50 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+      }
+  	</script>
 </body>
 </html>
