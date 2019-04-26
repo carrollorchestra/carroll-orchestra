@@ -17,6 +17,9 @@ h2 {
   text-transform: uppercase;
 
 }
+p {
+  font-size: 20px;
+}
 ol {
   list-style: none;
 }
@@ -24,14 +27,68 @@ li {
   margin-bottom: 2vh;
   list-style-type: none;
 }
+.glide {
+  background-color: rgba(0,0,0,0.8);
+  padding-top: 30px;
+}
+.slide-image {
+  height: 70vh;
+}
+.glide__slide {
+  margin-left: 100px;
+}
 
+.glide__arrow {
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 40%;
+  border: none;
+  background-color: rgba(255,255,255, 0.5);
+  transition: background-color .5s;
+}
+.glide__arrow:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.glide__arrow--next {
+  right: 5%;
+}
+.glide__arrow--prev {
+  left: 5%;
+}
+.glide__bullets {
+  text-align: center;
+}
+.glide__bullet {
+  background-color: rgb(230, 230, 230);
+  border: none;
+  width: 15px;
+  padding: 0;
+  height: 15px;
+  border-radius: 7.5px;
+}
+.glide button {
+  cursor: pointer;
+}
+.glide__bullet--active {
+  background-color: rgb(150, 150, 150);
+}
 @media screen and (max-width:1080px) {
   body {
     text-align: center;
   }
-  img {
-    width: 100vw;
+  .nursing, .two, .nursing-solo, .three {
     display: none;
+  }
+  .title, .article-container {
+    margin-top: 20%;
+  }
+  .four {
+    width: 100vw;
+  }
+  .slide-image {
+    height: 30vh;
   }
   ol {
     padding: 0;
@@ -39,9 +96,6 @@ li {
   }
   .members {
     display: none;
-  }
-  .three {
-    display: inline-block;
   }
 }
 @media screen and (min-width:1080px) {
@@ -53,6 +107,7 @@ li {
 }
 
 .title {
+  margin-top: 8%;
   font-size: 3vw;
   width: 100%;
   text-align: center;
@@ -250,29 +305,32 @@ li {
                                           color: black;
                                         }
 .contact {
-  width: 80%;
+  width: 100%;
   padding-left: 10%;
-  padding-bottom: 5vh;
+  padding-bottom: 30vh;
+  padding-top: 5vh;
+  color: white;
+  background-color: black;
 }
                                             .group-1 {
                                               display: inline-block;
-                                              width: 33%;
+                                              width: 26.6%;
                                             }
                                             .group-1 a {
                                               transition: .5s;
                                               display: inline-block;
                                               height: 2vh;
-                                              color: black;
+                                              color: white;
                                             }
                                             .group-1 a:hover {
-                                              color: black;
+                                              color: white;
                                             }
                                             .group-1 a::after {
                                                 content: '';
                                                 display: block;
                                                 width: 0%;
                                                 height: .1vw;
-                                                background: black;
+                                                background: white;
                                                 transition: .3s;
                                                 float: right;
                                             }
@@ -283,12 +341,22 @@ li {
 
                                             .group-2 {
                                               display: inline-block;
-                                              width: 33%;
+                                              width: 26.6%;
                                               text-align: right;
                                             }
                                             .group-3 {
                                               display: inline-block;
-                                              width: 33%;
+                                              width: 26.6%;
                                               text-align: right;
                                             }
   }
+
+@media screen and (min-width: 1000px) {
+  .article-container {
+    width: 60%;
+    margin: auto;
+  }
+}
+.article-container {
+  margin-top: 10%;
+}
